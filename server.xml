@@ -93,7 +93,8 @@
         </SSLHostConfig>
     </Connector>
     -->
-     <Connector port="8443" protocol="org.apache.coyote.http11.Http11NioProtocol"
+    <!--
+    <Connector port="8443" protocol="org.apache.coyote.http11.Http11NioProtocol"
                maxThreads="150" SSLEnabled="true">
         <SSLHostConfig>
             <Certificate certificateKeyFile="/opt/tomcat/ssl/tomcat.key"
@@ -101,8 +102,13 @@
                          type="RSA" />
         </SSLHostConfig>
     </Connector>
-
-
+    -->
+ <Connector port="8443" protocol="org.apache.coyote.http11.Http11NioProtocol"
+               maxThreads="150" SSLEnabled="true"
+               scheme="https" secure="true"
+               keystoreFile="/opt/tomcat/conf/tomcat"
+               keystorePass="&#100;&#101;&#118;&#111;&#112;&#115;"
+               SSLVerifyClient="none" SSLProtocol="TLSv1.2" />
 
     <!-- Define a SSL/TLS HTTP/1.1 Connector on port 8443 with HTTP/2
          This connector uses the APR/native implementation which always uses
