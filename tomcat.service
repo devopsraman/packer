@@ -12,7 +12,7 @@ Environment=CATALINA_HOME=/opt/tomcat
 Environment=CATALINA_BASE=/opt/tomcat
 ExecStart=/opt/tomcat/bin/startup.sh
 ExecStop=/opt/tomcat/bin/shutdown.sh
-Restart=on-failure
+
 
 [Install]
 WantedBy=multi-user.target
