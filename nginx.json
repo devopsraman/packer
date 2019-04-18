@@ -1,6 +1,6 @@
 {
             "variables": {
-                          "ami_id": "ami-0e12cbde3e77cbb98",
+                          "ami_id": "ami-7c1bfd1b",
                                 "app_name": "Nginx"
                                     },
 
